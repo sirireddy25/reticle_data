@@ -29,12 +29,14 @@ def home(request):
         LEN_L = []
         DIR_L = []
 
-
+        '''
         height = 560
         width = 704
+        '''
 
+        height, width = img.shape
 
-        encountered_pixels = np.zeros((560, 704))
+        encountered_pixels = np.zeros((height, width))
 
 
         for y_idx in range(height):
